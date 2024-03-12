@@ -1,0 +1,28 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore XAMPP-related files and directories
+xampp/*
+!xampp/htdocs/
+!xampp/mysql/data/
+
+# Ignore user-specific files and directories
+.vscode/
+*.log
+*.sqlite
+
+# Ignore Composer dependencies
+vendor/
+
+# Ignore Node.js dependencies
+node_modules/
+
+# Ignore PHP Composer lock file
+composer.lock
+
+# Ignore database dump files
+*.sql
+
+# Ignore sensitive information (e.g., credentials)
+config.php
