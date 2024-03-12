@@ -26,3 +26,4 @@ composer.lock
 
 # Ignore sensitive information (e.g., credentials)
 config.php
+./website-projekt/html/testing.html
