@@ -41,10 +41,10 @@
             // User authenticated, set session variables
             $_SESSION['username'] = $username;
             //header("Location: my-blog.php"); // Redirect to the blog page after successful login
-            header("Location: dashbord.php"); // Redirect to the blog page after successful login
+            header("Location: dashboard.php"); // Redirect to the blog page after successful login
         } else {
             // Invalid credentials, redirect back to login page
-        // header("Location: my-blog.html?error=1"); // Add error parameter to indicate failed login attempt
+        // header("Location: my-blog.php?error=1"); // Add error parameter to indicate failed login attempt
         echo "Invalid username or password";
         }
     }
