@@ -1,0 +1,1 @@
+mysql -u root -p -e "USE my_blog_db; INSERT INTO users (username, email, password) VALUES ('qqq', 'test@example.com', 'qqqq');"
