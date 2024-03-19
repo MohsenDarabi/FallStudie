@@ -5,9 +5,9 @@ ini_set('display_errors', 1);
 
 // Database configuration
 $servername = "localhost";
-$username = "root"; // Replace with your MySQL username
-$password = ""; // Replace with your MySQL password
-$dbname = "my_blog_db"; // Replace with your MySQL database name
+$username = "root";
+$password = "";
+$dbname = "my_blog_db";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);

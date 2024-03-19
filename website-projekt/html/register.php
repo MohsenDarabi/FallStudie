@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Retrieve form data
     $username = $_POST['username'];
     $email = $_POST['email'];
-    $password = $_POST['password']; // For simplicity, i'll store plaintext password (not recommended in production)
+    $password = $_POST['password']; // For simplicity, i'll store plaintext password
 
     // Hash the password for security (recommended)
     // $hashed_password = password_hash($password, PASSWORD_DEFAULT);

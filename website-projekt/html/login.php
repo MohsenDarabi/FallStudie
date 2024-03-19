@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Login</title>
 </head>
 <body>
+    <?php include 'navbar.php';?>
     <h2>Login</h2>
 
     <!-- Login Form -->
@@ -44,10 +46,12 @@
             header("Location: dashboard.php"); // Redirect to the blog page after successful login
         } else {
             // Invalid credentials, redirect back to login page
-        // header("Location: my-blog.php?error=1"); // Add error parameter to indicate failed login attempt
-        echo "Invalid username or password";
+            echo "<h1> Invalid username or password</h1>";
+        header("Location: login.php?error=1"); // Add error parameter to indicate failed login attempt
+        
         }
     }
     ?>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
 </body>
 </html>

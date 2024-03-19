@@ -11,14 +11,6 @@
     <header>
         <h1>Mohsen Darabi</h1>
         <h2>Full Stack Developer</h2>
-       <!--  <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="my-blog.html">My Blog</a></li>
-            </ul>
-        </nav> -->
-        
     </header>
     
     <main>

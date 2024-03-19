@@ -14,7 +14,6 @@ if (!isset($_SESSION['username'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <!-- Keep the existing Bootstrap CSS link -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
@@ -28,7 +27,7 @@ if (!isset($_SESSION['username'])) {
     </li>
 </ul>
 
-<!-- Dashboard content -->
+<!-- Dashboard -->
 <div class="container py-5">
     <h1>Welcome to the Dashboard!</h1>
     <?php
@@ -56,7 +55,6 @@ if (!isset($_SESSION['username'])) {
     </div>
 </footer>
 
-<!-- Keep the existing Bootstrap JS script link -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
