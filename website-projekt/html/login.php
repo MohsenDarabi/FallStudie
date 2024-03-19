@@ -10,6 +10,13 @@
     <?php include 'navbar.php';?>
     <h2>Login</h2>
 
+    <!-- Display Error Message if Present -->
+    <?php if(isset($_GET['error']) && $_GET['error'] == 1): ?>
+        <div class="alert alert-danger" role="alert">
+            Invalid username or password!
+        </div>
+    <?php endif; ?>
+
     <!-- Login Form -->
     <form action="login.php" method="post">
         <div>
@@ -42,13 +49,12 @@
         if ($result->num_rows == 1) {
             // User authenticated, set session variables
             $_SESSION['username'] = $username;
-            //header("Location: my-blog.php"); // Redirect to the blog page after successful login
-            header("Location: dashboard.php"); // Redirect to the blog page after successful login
+            // Redirect to the dashboard page after successful login
+            header("Location: dashboard.php");
         } else {
-            // Invalid credentials, redirect back to login page
-            echo "<h1> Invalid username or password</h1>";
-        header("Location: login.php?error=1"); // Add error parameter to indicate failed login attempt
-        
+            // Invalid credentials, redirect back to login page with error parameter
+            header("Location: login.php?error=1");
+            exit(); // Terminate script execution after redirect
         }
     }
     ?>
